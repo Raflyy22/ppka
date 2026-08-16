@@ -1,0 +1,12 @@
+{
+  "name": "ppka-simulator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "latest"
+  }
+}

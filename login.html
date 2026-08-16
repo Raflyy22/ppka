@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Login aman PPKA Simulator">
+<title>Login — PPKA Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/app.css">
+<style>
+.auth-page{min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 15% 10%,rgba(255,176,32,.11),transparent 28%),var(--bg)}
+.auth-card{width:min(430px,100%);padding:30px}.auth-brand{text-align:center;margin-bottom:25px}.auth-brand .brand-mark{margin:auto}.auth-brand h1{font-family:"Space Grotesk";margin:15px 0 5px}.auth-brand p{color:var(--muted);font-size:13px}.auth-note{margin-top:18px;padding:12px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:11px;line-height:1.6}
+.toast-root{right:20px;bottom:20px;position:fixed;z-index:99}
+</style>
+</head>
+<body>
+<main class="auth-page">
+  <section class="card auth-card">
+    <div class="auth-brand">
+      <div class="brand-mark">🚆</div>
+      <h1>PPKA Simulator</h1>
+      <p>Secure Operations Portal</p>
+    </div>
+    <form id="login-form" class="grid">
+      <div class="field"><label>Email</label><input name="email" type="email" autocomplete="username" required placeholder="nama@email.com"></div>
+      <div class="field"><label>Password</label><input name="password" type="password" autocomplete="current-password" required placeholder="••••••••"></div>
+      <button class="btn primary" type="submit">Masuk dengan aman →</button>
+    </form>
+    <div class="auth-note">
+      Demo user: <strong>raka@example.com</strong> / <strong>Demo@12345</strong><br>
+      Demo admin: <strong>admin@example.com</strong> / <strong>Admin@12345!</strong><br>
+      Ganti kredensial seed sebelum production.
+    </div>
+  </section>
+</main>
+<div id="toast-root" class="toast-root"></div>
+<script type="module" src="/assets/js/auth.js"></script>
+</body>
+</html>
