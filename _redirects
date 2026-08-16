@@ -1,4 +1,0 @@
-# API routes are handled by netlify.toml.
-# Keep this file for future SPA/static routing rules.
-
-/api/admin /.netlify/functions/admin 200
