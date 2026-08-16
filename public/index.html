@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PPKA Simulator — simulasi perjalanan dan pengelolaan perjalanan kereta api Indonesia.">
+  <meta name="theme-color" content="#0b1220">
+  <title>PPKA Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+<body>
+  <div id="app-loader" class="app-loader"><div class="loader-ring"></div><span>Memuat PPKA Simulator...</span></div>
+  <div id="toast-root" class="toast-root"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">🚆</div>
+      <div><strong>PPKA</strong><small>SIMULATOR</small></div>
+    </div>
+    <nav id="main-nav" class="nav-list">
+      <button data-view="dashboard" class="nav-item active"><span>⌂</span> Dashboard</button>
+      <button data-view="simulator" class="nav-item"><span>▶</span> Simulator</button>
+      <button data-view="schedules" class="nav-item"><span>▤</span> Jadwal KA</button>
+      <button data-view="trains" class="nav-item"><span>🚆</span> Kereta</button>
+      <button data-view="stations" class="nav-item"><span>⌖</span> Stasiun</button>
+      <button data-view="leaderboard" class="nav-item"><span>♛</span> Leaderboard</button>
+      <button data-view="activity" class="nav-item"><span>◴</span> Aktivitas</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button data-action="theme" class="nav-item"><span>◐</span> Tema</button>
+      <button data-action="logout" class="nav-item danger"><span>↪</span> Keluar</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="menu-toggle" class="icon-btn" aria-label="Menu">☰</button>
+      <div class="breadcrumbs"><span>PPKA</span><b>/</b><span id="page-title">Dashboard</span></div>
+      <div class="top-actions">
+        <button class="icon-btn" data-action="notifications" aria-label="Notifikasi">♧<i id="notif-dot"></i></button>
+        <div class="profile">
+          <div class="avatar" id="user-avatar">P</div>
+          <div><strong id="user-name">Pengguna</strong><small id="user-role">Masinis</small></div>
+        </div>
+      </div>
+    </header>
+    <section id="view-root" class="view-root"></section>
+  </main>
+
+  <dialog id="modal" class="modal"></dialog>
+</body>
+</html>
