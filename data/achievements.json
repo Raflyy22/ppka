@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ach_001",
+    "code": "FIRST_RUN",
+    "name": "Perjalanan Pertama",
+    "description": "Selesaikan simulasi pertama.",
+    "xp": 100
+  },
+  {
+    "id": "ach_002",
+    "code": "ON_TIME",
+    "name": "Tepat Waktu",
+    "description": "Selesaikan simulasi tanpa keterlambatan.",
+    "xp": 250
+  }
+]

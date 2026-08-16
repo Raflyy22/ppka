@@ -1,0 +1,3 @@
+import {store} from "../core/state.js";
+export function render(){return `<main class="page"><section class="card"><div class="eyebrow">Pengaturan</div><h1 class="title">Settings</h1><div class="list-item"><div><strong>Tema</strong><div class="muted">Tampilan aplikasi</div></div><select id="theme" style="padding:10px;border-radius:12px"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div><button class="btn btn-secondary btn-block" data-route="/home">Kembali</button></section></main>`}
+export function mount(){const e=document.querySelector("#theme");e.value=store.state.theme;e.onchange=()=>store.set({theme:e.value})}

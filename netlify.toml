@@ -1,0 +1,73 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/auth/*"
+  to = "/.netlify/functions/auth"
+  status = 200
+[[redirects]]
+  from = "/api/users/*"
+  to = "/.netlify/functions/users"
+  status = 200
+[[redirects]]
+  from = "/api/trains/*"
+  to = "/.netlify/functions/trains"
+  status = 200
+[[redirects]]
+  from = "/api/stations/*"
+  to = "/.netlify/functions/stations"
+  status = 200
+[[redirects]]
+  from = "/api/schedules/*"
+  to = "/.netlify/functions/schedules"
+  status = 200
+[[redirects]]
+  from = "/api/simulations/*"
+  to = "/.netlify/functions/simulations"
+  status = 200
+[[redirects]]
+  from = "/api/admin/*"
+  to = "/.netlify/functions/admin"
+  status = 200
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+[[redirects]]
+  from = "/api/routes/*"
+  to = "/.netlify/functions/routes"
+  status = 200
+
+[[redirects]]
+  from = "/api/schedules/*"
+  to = "/.netlify/functions/schedules"
+  status = 200
+
+[[redirects]]
+  from = "/api/scenarios/*"
+  to = "/.netlify/functions/scenarios"
+  status = 200
+
+[[redirects]]
+  from = "/api/achievements/*"
+  to = "/.netlify/functions/achievements"
+  status = 200
+
+[[redirects]]
+  from = "/api/notifications/*"
+  to = "/.netlify/functions/notifications"
+  status = 200
+
+[[redirects]]
+  from = "/api/reports/*"
+  to = "/.netlify/functions/reports"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

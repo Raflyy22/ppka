@@ -1,0 +1,1 @@
+export const router={path(){const p=location.hash.replace(/^#/,"")||"/home";return p.startsWith("/")?p:`/${p}`},navigate(p){location.hash=p}};

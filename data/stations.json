@@ -1,0 +1,26 @@
+[
+  {
+    "id": "stn_001",
+    "code": "BD",
+    "name": "Bandung",
+    "city": "Bandung",
+    "province": "Jawa Barat",
+    "active": true
+  },
+  {
+    "id": "stn_002",
+    "code": "GMR",
+    "name": "Gambir",
+    "city": "Jakarta",
+    "province": "DKI Jakarta",
+    "active": true
+  },
+  {
+    "id": "stn_003",
+    "code": "YK",
+    "name": "Yogyakarta",
+    "city": "Yogyakarta",
+    "province": "DI Yogyakarta",
+    "active": true
+  }
+]

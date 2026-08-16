@@ -1,0 +1,20 @@
+[
+  {
+    "id": "trn_001",
+    "code": "KA-101",
+    "name": "Argo Simulator",
+    "type": "Express",
+    "operator": "KAI",
+    "active": true,
+    "maxSpeed": 120
+  },
+  {
+    "id": "trn_002",
+    "code": "KA-202",
+    "name": "Lokal Simulator",
+    "type": "Local",
+    "operator": "KAI",
+    "active": true,
+    "maxSpeed": 90
+  }
+]

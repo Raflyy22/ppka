@@ -1,0 +1,18 @@
+[
+  {
+    "id": "scn_001",
+    "name": "Operasi Pagi",
+    "difficulty": "easy",
+    "durationMinutes": 30,
+    "enabled": true,
+    "description": "Latihan dasar pengelolaan perjalanan."
+  },
+  {
+    "id": "scn_002",
+    "name": "Jam Sibuk",
+    "difficulty": "medium",
+    "durationMinutes": 45,
+    "enabled": true,
+    "description": "Latihan dengan jadwal padat dan potensi keterlambatan."
+  }
+]

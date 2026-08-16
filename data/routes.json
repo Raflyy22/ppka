@@ -1,0 +1,12 @@
+[
+  {
+    "id": "rte_001",
+    "code": "BD-GMR",
+    "name": "Bandung — Gambir",
+    "stationIds": [
+      "stn_001",
+      "stn_002"
+    ],
+    "active": true
+  }
+]

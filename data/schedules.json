@@ -1,0 +1,11 @@
+[
+  {
+    "id": "sch_001",
+    "trainId": "trn_001",
+    "routeId": "rte_001",
+    "serviceDate": "2026-08-17",
+    "departure": "06:00",
+    "arrival": "08:50",
+    "status": "scheduled"
+  }
+]

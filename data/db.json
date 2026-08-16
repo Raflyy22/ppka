@@ -1,0 +1,21 @@
+{
+  "users": [],
+  "admins": [],
+  "sessions": [],
+  "trains": [],
+  "stations": [],
+  "routes": [],
+  "schedules": [],
+  "simulations": [],
+  "simulation_logs": [],
+  "scores": [],
+  "achievements": [],
+  "notifications": [],
+  "reports": [],
+  "audit_logs": [],
+  "settings": {
+    "maintenance": false,
+    "registration": true,
+    "simulationEnabled": true
+  }
+}
