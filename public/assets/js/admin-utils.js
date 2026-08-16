@@ -1,0 +1,7 @@
+function csrfToken(){return decodeURIComponent((document.cookie.match(/(?:^|;\s*)ppka_csrf=([^;]+)/)||[])[1]||"")}
+export function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+export function toast(msg,type="success"){const r=document.querySelector("#toast-root")||document.body,e=document.createElement("div");e.className=`toast ${type}`;e.textContent=msg;r.append(e);setTimeout(()=>e.remove(),3200)}
+export async function api(url,opt={}){const method=(opt.method||"GET").toUpperCase(),headers={"Content-Type":"application/json",...(opt.headers||{})};if(!["GET","HEAD","OPTIONS"].includes(method))headers["X-CSRF-Token"]=csrfToken();const r=await fetch(url,{credentials:"same-origin",...opt,headers});const b=await r.json().catch(()=>({}));if(!r.ok)throw Error(b.message||"Request gagal");return b}
+export function openModal(title,html){let m=document.querySelector("#modal");if(!m){m=document.createElement("div");m.id="modal";m.className="modal-backdrop";document.body.append(m)}m.innerHTML=`<div class="modal"><div class="modal-head"><h3>${esc(title)}</h3><button class="close" data-close-modal>×</button></div><div class="modal-body">${html}</div></div>`;m.hidden=false}
+export function closeModal(){const m=document.querySelector("#modal");if(m)m.hidden=true}
+document.addEventListener("click",e=>{if(e.target.matches("[data-close-modal]")||e.target.id==="modal")closeModal()})
